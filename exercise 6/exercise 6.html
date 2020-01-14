@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise #6: Simple form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style>
+    .bs-example{
+        margin: 20px;        
+    }
+</style>
+</head>
+<body>
+<form class="col-md-4" action="#">
+    
+    <div>
+        <label for="first_name">First name:</label>
+        <input class="form-control" type="text" name="first_name" id="first_name"/>
+    </div>
+    <div>
+        <label for="last_name">Last name:</label>
+        <input class="form-control" type="text" name="last_name" id="last_name"/>
+    </div>
+    <div>
+        <label><input type="radio" name="gender" value="male"/>male</label>
+        <label><input type="radio" name="gender" value="female"/>female</label>
+    </div>
+    <div>
+        <label for="birth_date">Date of birth:</label>
+        <input type="date" name="birth_date" id="birth_date"/>
+    </div>
+    <input class="btn btn-primary" type="submit" value="Add"/>
+</form>
+</body>
+</html>
